@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="hero">
+      <h1>Hi, I'm Paradise Moloto</h1>
+      <p>A passionate Web Developer creating engaging and functional websites.</p>
+      <img src=" https://images.app.goo.gl/MmsW9gY6c6GVZGH58 ">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m [Paraise Moloto] a web developer with expertise in HTML, CSS, and JavaScript. I hold a degree in Software Development from University of Cape Town. Over the past 2 years, I’ve worked on various projects ranging from personal portfolios to dynamic web applications.</p>
+    <h3>Education</h3>
+    <ul>
+      <li>Bachelor's Degree in Software Development   From - University of Cape Town</li>
+    </ul>
+    <h3>Professional Experience</h3>
+    <ul>
+      <li>Web Developer at Adrenaline Company - for two years</li>
+      <li>Freelance Projects for clients worldwide</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>ADRENALINE HOMES.</p>
+        <a href=" " target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p> Stop Watch.</p>
+        <a href=" " target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me via email or social media.</p>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Paradise Moloto. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<ALOASK-SEPARATE-EDITORS>/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+  }
+  
+  .hero img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects */
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    width: 45%;
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .project a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+  }<ALOASK-SEPARATE-EDITORS>// Add interactivity if needed
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+  });
